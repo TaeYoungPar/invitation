@@ -1,0 +1,287 @@
+:root {
+  --red: #d25a4b;
+  --blue: #369de9;
+  --gray: #aaaaaa;
+  --black: #050203;
+}
+
+@font-face {
+  font-family: 'GowunBatang-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--black);
+  font-size: 15px;
+}
+
+.btn {
+  width: 80%;
+  max-width: 280px;
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--black);
+  font-family: 'GowunBatang-Regular';
+}
+
+.first {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/static/marry1.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.first .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-family: 'GowunBatang-Regular';
+}
+
+.first .first-top {
+  position: absolute;
+  font-size: 40px;
+  top: 50px;
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+}
+
+.first .first-bottom {
+  position: absolute;
+  bottom: 150px;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.row1 {
+  padding: 70px 20px;
+  text-align: center;
+  font-family: 'GowunBatang-Regular';
+
+}
+
+.row1 h4 {
+  margin-bottom: 30px;
+}
+
+.row2 {
+  padding: 70px 20px;
+  text-align: center;
+  font-family: 'GowunBatang-Regular';
+  background: url('/static/bg.png') repeat;
+}
+
+.row2 h4 {
+  margin-bottom: 30px;
+}
+
+.row3 {
+  padding: 70px 20px;
+  text-align: center;
+  font-family: 'GowunBatang-Regular';
+  background: url('/static/bg.png') repeat;
+  font-size: large;
+  line-height: 200%;
+}
+
+
+
+.intro {
+  width: 100%;
+  font-size: 25px;
+
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 20
+}
+
+.calendar {
+  width: 100%;
+  margin: 30px 0;
+}
+
+.calendar td {
+  text-align: center;
+  padding: 10px;
+}
+
+.calendar thead td {
+  font-weight: bold;
+  padding: 5px;
+}
+
+.sun {
+  color: var(--red);
+}
+
+.sat {
+  color: var(--blue);
+}
+
+.out {
+  color: var(--gray);
+}
+
+td img {
+  position: absolute;
+  width: 10px;
+}
+
+
+.guestbook input {
+  width: 100%;
+  border: 0;
+  background: #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-bottom: 30px;
+}
+
+.guestbook textarea {
+  width: 100%;
+  border: 0;
+  background: #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-bottom: 30px;
+}
+
+.guestbook button {
+  width: 100%;
+  border: 0;
+  background: #000000;
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.guestbook-row {
+  background: #f2f2f2;
+}
+
+.guestbook-row table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.guestbook-row table tr {
+  background: #ffffff;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.guestbook-row table td {
+  padding: 5px 10px;
+}
+
+.guestbook-row table td.content {
+  white-space: pre;
+}
+
+.snowflake {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(white, white);
+  /* Workaround for Chromium's selective color inversion */
+  border-radius: 50%;
+  filter: drop-shadow(0 0 10px white);
+}
+
+.root_daum_roughmap {
+  width: 100% !important;
+}
+
+.slick-slide {
+  height: auto !important;
+}
+
+.mymodal-footer {
+  text-align: center;
+  padding: 10px;
+}
+
+.mymodal-footer button {
+  color: white;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.pagination a {
+  color: var(--black);
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: #fff;
+  margin: 5px;
+}
+
+
+.card-sbody {
+  width: auto;
+  float: left;
+  text-align: center;
+}
+
+.card-ssbody {
+  float: right;
+  text-align: center;
+}
+
+.card-body a {
+  text-decoration: none;
+
+}
+
+.card-account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-body img {
+  margin-top: 20px;
+}
+
+.card-body button {
+  width: 140px;
+  justify-content: center;
+  margin: 20px 50px 0;
+  border: 0;
+  background: #4bd26f;
+  border-radius: 15px;
+  padding: 4px 10px;
+  color: #000000;
+}
